@@ -1,0 +1,39 @@
+/* etiqueta html van con el nombre directamente */
+/* Clases van con " ." .Nombreclass */
+/* ID van con "#"  #NombreID */
+body{
+    background-color: rgba(27, 56, 40, 0.692);
+    color: blue;
+}
+
+#redes{
+text-align: center;
+margin: auto;
+
+}
+
+li{
+list-style-type: none;
+margin-left: -3.5%;
+}
+
+/* border radius para redondear la imagen en % no en px por compatibilidad de dispositivos conviene poner en % */
+.imgPerfil{
+ border-radius: 100%;
+ -webkit-border-radius: 100%;
+ -moz-border-radius: 100%;
+ -ms-border-radius: 100%;
+ -o-border-radius: 100%;
+}
+
+/* tamaño de fuente con unidad relativa */
+.nombrePerfil{
+ font-size: 5rem;   
+
+}
+
+/* centrar imagen dentro de un div con una class banner para ubicar a ala derecha  */
+.banner{
+  justify-content: end;  
+  display: flex;
+}
