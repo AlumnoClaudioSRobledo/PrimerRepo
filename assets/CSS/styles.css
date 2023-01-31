@@ -2,8 +2,8 @@
 /* Clases van con " ." .Nombreclass */
 /* ID van con "#"  #NombreID */
 body{
-    background-color: rgba(27, 56, 40, 0.692);
-    color: blue;
+    background-color: rgba(16, 212, 104, 0.692);
+    
 }
 
 #redes{
@@ -24,11 +24,14 @@ margin-left: -3.5%;
  -moz-border-radius: 100%;
  -ms-border-radius: 100%;
  -o-border-radius: 100%;
+ border-style: solid;
+
 }
 
 /* tamaño de fuente con unidad relativa */
 .nombrePerfil{
  font-size: 5rem;   
+ border-style: solid;
 
 }
 
@@ -36,4 +39,37 @@ margin-left: -3.5%;
 .banner{
   justify-content: end;  
   display: flex;
+  border-style: solid;
+
+}
+
+/* cambiar el color al apellido con otra etiqueta neutra <span> usando una class apellido
+si queremos ver una clase aqui haciendo ctrl + f y buscamos la clase o etiqueta a buscar con el nombre en css se lee desde abajo hacia arriba lasprioridad es esa en este ejemplo de apellido superponen da prioridad a la de mas abajo pero se puede librar eso y poner !important , pero no abusar puede traer conflicto con boostrap*/
+.apellido{
+  color: black !important;
+}
+.apellido{
+  color :rgba(16, 212, 104, 0.692)
+}
+.apellido{
+  color:rgba(197, 3, 3, 0.692)
+}
+
+.video{
+/*
+en ves de escribir todo esto:
+margin-top: 7rem;
+margin-right: 2rem;
+margin-left: 20rem;
+margin-bottom: 0rem; 
+Podemos escribir lo siguiente en sentido de las agujas del reloj 12(top) 3(right)  6(bottom) 9(left) se puede poner en rem o % no esta bien mezclar rem y % */
+margin : 7rem 2rem 0rem 20rem;
+}
+ 
+/*
+padding funciona de la misma forma igual a margin. 
+el margen puede ser positivo o negativo , padding jamas negativo . */
+.mapa{
+  padding: 10%;
+  border-style: solid;
 }
